@@ -12,14 +12,13 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: "us-east-1"
-  app: "learndocker"
-  env: "Learndocker-env"
-  bucket_name: "elasticbeanstalk-us-east-1-373240450338"
-  bucket_path: "learndocker"
+  region: 'us-east-1'
+  app: 'learndocker'
+  env: 'Learndocker-env'
+  bucket_name: 'elasticbeanstalk-us-east-1-373240450338'
+  bucket_path: 'learndocker'
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: "$SECRET_ACCESS_KEY"
-
+  secret_access_key: 
+    secure: "SECRET_ACCESS_KEY"
